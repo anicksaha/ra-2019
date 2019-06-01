@@ -6,3 +6,4 @@
 .Rhistory?
 
 # Ignore Data folders:
+/data/*
