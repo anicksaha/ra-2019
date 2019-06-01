@@ -25,5 +25,5 @@
 
 ***
 
-__Misc:__ [markdown guide](https://www.markdownguide.org/basic-syntax/)
+__Misc:__ [Markdown guide](https://www.markdownguide.org/basic-syntax/)
 
