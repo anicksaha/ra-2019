@@ -1,3 +1,10 @@
+#### Data
+
 - pip install pytube
 - Create a 'data' folder. 
-- Run __python GetData.py__
+- Run _python GetData.py_
+
+#### Face Extraction
+
+
+#### Emotion Bucketizing
