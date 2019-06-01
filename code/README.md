@@ -12,8 +12,8 @@
 
 #### Data
 
-> - Create a folder with the name _'data'_. 
-> - _Run:_ `python GetData.py`
+- Create a folder with the name _'data'_. 
+- _Run:_ `python GetData.py`
 
 ***
 
