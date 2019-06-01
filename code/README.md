@@ -1,8 +1,8 @@
 #### Data
 
-- Run: pip install pytube
+- _Run:_ pip install pytube
 - Create a folder with the name _'data'_. 
-- Run: python _GetData.py_
+- _Run:_ python GetData.py
 
 #### Face Extraction
 
