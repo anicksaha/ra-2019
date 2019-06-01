@@ -1,7 +1,3 @@
-Misc: [markdown guide](https://www.markdownguide.org/basic-syntax/)
-
----
-
 #### Init
 > - pip install pytube
 
@@ -19,7 +15,15 @@ Misc: [markdown guide](https://www.markdownguide.org/basic-syntax/)
 > - Create a folder with the name _'data'_. 
 > - _Run:_ python GetData.py
 
+***
+
 #### Face Extraction
 
+***
 
 #### Emotion Bucketizing
+
+***
+
+__Misc:__ [markdown guide](https://www.markdownguide.org/basic-syntax/)
+
