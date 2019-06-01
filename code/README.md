@@ -1,7 +1,7 @@
 #### Init
 > - pip install pytube
 
-[pytube](https://python-pytube.readthedocs.io/en/latest/) is a lightweight, Pythonic, dependency-free, library (and command-line utility) for downloading YouTube Videos.
+[pytube](https://python-pytube.readthedocs.io/en/latest/) is a lightweight, Pythonic, dependency-free library (and command-line utility) for downloading YouTube Videos.
 
 > - pip install opencv-python
 
