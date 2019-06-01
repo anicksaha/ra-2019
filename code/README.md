@@ -1,7 +1,6 @@
 #### Init
-
-- _Run:_ pip install pytube
-- _Run:_ pip install opencv-python
+> - pip install pytube
+> - pip install opencv-python
 
 #### Data
 
