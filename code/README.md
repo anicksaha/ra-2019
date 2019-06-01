@@ -2,6 +2,8 @@
 > - pip install pytube
 > - pip install opencv-python
 
+[OpenCV](https://opencv.org/) (Open Source Computer Vision) is a library aimed at building computer vision applications. It has numerous pre-written functions for image processing tasks.
+
 #### Data
 
 > - Create a folder with the name _'data'_. 
