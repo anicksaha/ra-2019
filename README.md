@@ -1,5 +1,4 @@
-### Architecting Anthropoveillance
- < considering new spatial theories at the universal disposition of big data >
+< considering new spatial theories at the universal disposition of big data >
 
 
 ### Links: 
