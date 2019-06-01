@@ -1,6 +1,6 @@
 #### Data
 
-- pip install pytube
+- Run: pip install pytube
 - Create a folder with the name _'data'_. 
 - Run: python _GetData.py_
 
