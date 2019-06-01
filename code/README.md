@@ -1,3 +1,5 @@
+Misc: [markdown guide](https://www.markdownguide.org/basic-syntax/)
+
 #### Init
 > - pip install pytube
 
@@ -6,6 +8,9 @@
 > - pip install opencv-python
 
 [OpenCV](https://opencv.org/) (Open Source Computer Vision) is a library aimed at building computer vision applications. It has numerous pre-written functions for image processing tasks.
+
+***
+
 
 #### Data
 
