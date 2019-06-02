@@ -12,8 +12,4 @@
 - []() -> Emotion Detection
 - []() -> References/papers on the subject face detection and emotion detection
 
-#### Week 3
-
-
-
 ---
