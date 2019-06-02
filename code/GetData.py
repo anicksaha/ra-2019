@@ -1,16 +1,20 @@
 import pytube
 
-link = "https://www.youtube.com/watch?v=iTqnRKuAljI"
-video = pytube.YouTube(link)
+links = open('links.txt','r')
 
-print(video.title)
-print(video.video_id)
-print(video.age_restricted)
-print(video.thumbnail_url)
+for link in links:
+	
+	try:
+		video = pytube.YouTube(link)
+		print(video.title)
+		#print(video.video_id)
+		#print(video.age_restricted)
+		#print(video.thumbnail_url)
+		#print()
 
-print()
+		stream = video.streams.first()
+		stream.download('./data/')
+	except:
+		print(link)
 
 
-stream = video.streams.first()
-
-stream.download('./data/')
