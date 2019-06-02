@@ -17,9 +17,3 @@
 
 
 ---
-
-@Vahan: Please add your inputs and things that you need here. Thankyou! :)
-
-_Current focus:_ [p1]
-
-I'd like you to webscrape a dozen or more videos on #giletsjaunes or yellow vests. For now these can be RUPTLY videos on youtube, not news reports. I want to understand how face-detection algorithms and emotion detection algorithms can work on this sample. I want to see when do these break. There are some existing crude methods on how to detect emotion from an image, I'm interested to see how these will work here. Next step, for example, might be to use the cropped faces, categorized by emotion, to synthesize generic images in tensorflow, amongst other things. Additionally, I'd also be interested to see all of the references/papers on the subject face detection, emotion detection.
