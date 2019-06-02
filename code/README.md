@@ -1,3 +1,5 @@
+> `pip install --upgrade pip`
+
 #### Init
 > `pip install pytube`
 
