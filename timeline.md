@@ -20,7 +20,7 @@
 #### Week 2
 
 - [Stub] -> Face Extraction from Videos
-- [Stub] -> Emotion Detection
+- [Stub] -> Emotion/Face Detection
 - [Stub] -> References/papers on the subject face detection and emotion detection
 
 ---
