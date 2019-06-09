@@ -5,7 +5,7 @@
 
 ## Pipeline: 
 
-#### Step 1: Finding all the Faces
+### Step 1: Finding all the Faces
 
 - HOG -> Histograms of Oriented Gradients
 - HOG Image conversion
