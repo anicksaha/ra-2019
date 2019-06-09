@@ -2,6 +2,10 @@
 
 - [Histograms of Oriented Gradients for Human Detection](http://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf)
 
+## Blogs/Articles: 
+
+- [Modern Face Recognition with Deep Learning](https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78)
+- [Facial Expressions Recognition](https://medium.com/@hinasharma19se/facial-expressions-recognition-b022318d842a)
 
 ## Pipeline: 
 
