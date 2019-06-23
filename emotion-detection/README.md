@@ -5,6 +5,8 @@
 #### Installations: 
 
 - `sudo easy_install pip`
+- `brew cask install anaconda`
+- `pip install opencv-python`
 
 
 ### References: 
