@@ -2,6 +2,9 @@
 
 
 
+#### Installations: 
+
+- `sudo easy_install pip`
 
 
 ### References: 
