@@ -11,6 +11,10 @@
 - `conda install keras` 
 - `conda install opencv` | `pip install opencv-python`
 
+##### Others: 
+
+- export PATH="/usr/local/anaconda3/bin:$PATH"
+
 
 ### References: 
 
