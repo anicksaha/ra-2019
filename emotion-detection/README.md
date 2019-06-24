@@ -7,7 +7,7 @@
 - Install [Homebrew](https://brew.sh/)
 - `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 - `sudo easy_install pip`
-- `brew cask install anaconda`
+- `brew cask install anaconda` -> `conda install keras` 
 - `pip install opencv-python`
 
 
