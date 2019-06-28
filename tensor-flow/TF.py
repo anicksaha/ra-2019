@@ -6,7 +6,7 @@ import numpy as np
 model = VGG19(weights='imagenet', include_top=False)
 # model.summary()
 
-img_path = './test/mila.jpg'
+img_path = './data/test/mila.jpg'
 img = image.load_img(img_path, target_size=(224, 224))
 img_data = image.img_to_array(img)
 img_data = np.expand_dims(img_data, axis=0)
@@ -16,8 +16,6 @@ vgg_feature = model.predict(img_data)
 
 # print(vgg_feature)
 # print(vgg_feature.shape)
-
-
 
 
 
