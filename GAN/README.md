@@ -12,3 +12,7 @@
 
 #### Papers: 
 - arXiv | [An Introduction to Image Synthesis with Generative Adversarial Nets](https://arxiv.org/pdf/1803.04469.pdf)
+
+#### Commands: 
+
+- `pip list | grep Keras` <- Keras version
