@@ -16,3 +16,7 @@
 #### Commands: 
 
 - `pip list | grep Keras` <- Keras version
+
+#### Errors and fixes: 
+
+- https://stackoverflow.com/questions/53014306/error-15-initializing-libiomp5-dylib-but-found-libiomp5-dylib-already-initial
