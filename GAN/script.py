@@ -10,6 +10,9 @@ from keras.layers.advanced_activations import LeakyReLU
 from keras.optimizers import adam
 
 
+## fix MacOS problem
+import os
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 def load_data():
     (x_train, y_train), (x_test, y_test) = mnist.load_data()
