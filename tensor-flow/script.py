@@ -1,6 +1,6 @@
 from keras.preprocessing import image
-from keras.applications.vgg19 import VGG19
-from keras.applications.vgg19 import preprocess_input
+from keras.applications.resnet50 import ResNet50
+from keras.applications.resnet50 import preprocess_input
 #from extract_faces import extract_images
 from sklearn.cluster import KMeans
 
@@ -20,7 +20,7 @@ print(imagenames_list)
 
 
 
-model = VGG19(weights='imagenet', include_top=False)
+model = ResNet50(weights='imagenet', include_top=False)
 # model.summary()
 
 vgg_feature_list = []
@@ -28,7 +28,7 @@ vgg_feature_list = []
   
 for file_path in imagenames_list:
     img_path = file_path
-    print(img_path)
+    #print(img_path)
     img = image.load_img(img_path, target_size=(224, 224))
     img_data = image.img_to_array(img)
     img_data = np.expand_dims(img_data, axis=0)
@@ -38,6 +38,8 @@ for file_path in imagenames_list:
     normalized_reduced_examples = np.nan_to_num((vgg_feature_np - np.mean(vgg_feature_np, axis=0)) / np.std(vgg_feature_np, axis=0))
     vgg_feature_list.append(normalized_reduced_examples.flatten())
     
+
+
 
 vgg_feature_list_np = np.array(vgg_feature_list)
 # test_list=[]
@@ -58,10 +60,6 @@ vgg_feature_list_np = np.array(vgg_feature_list)
 #     vgg_feature_test_list.append(vgg_feature_np.flatten())
 
 
-# vgg_test_list_np = np.array(vgg_feature_test_list)
-
-# # kmeans = KMeans(n_clusters = 2, random_state = 0).fit(vgg_feature_list_np)
-
 from sklearn.neighbors import NearestNeighbors
 
 n_neighbors = 5
@@ -69,7 +67,6 @@ nnbrs = NearestNeighbors(n_neighbors=n_neighbors, algorithm='brute', metric='cos
 distances, neighbors_indices = nnbrs.kneighbors(vgg_feature_list_np)
 print(neighbors_indices)
 
-#logging.debug('Note that the first neighbor of every point is itself:\n{neighbors_indices}'.format(neighbors_indices=neighbors_indices))
 scores = 1 - (distances / np.max(distances))
 #print(scores)
 #Since the first neighbor is itself, the first column will correspond to input image
@@ -77,6 +74,7 @@ n_rows = 1
 normalized_reduced_examples_visualized_indices = np.random.randint(low=0, high=20, size=(n_rows))
 embedding = np.empty((n_rows * n_neighbors, 2))
 embedding_filenames = [None] * (n_rows * n_neighbors)
+
 for row in range(n_rows):
     example_index = normalized_reduced_examples_visualized_indices[row]
     example_neighbors = neighbors_indices[example_index]
@@ -85,5 +83,9 @@ for row in range(n_rows):
         embedding[i, 0] = column
         embedding[i, 1] = row
         embedding_filenames[i] = imagenames_list[example_neighbors[column]]
-# visualize_embedding(embedding, embedding_filenames, zoom=0.2, name=(dataset_name + '-knn'))
+
 print(embedding_filenames)
+#check if weights are proper
+#randomized index of image use map
+#gray scale
+#open face, VGG face net50
