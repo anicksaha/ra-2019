@@ -9,3 +9,6 @@
 #### Repos: 
 - Github | [Keras-GAN](https://github.com/eriklindernoren/Keras-GAN)
 - Github | [Cycle-GAN](https://github.com/junyanz/CycleGAN)
+
+#### Papers: 
+- arXiv | [An Introduction to Image Synthesis with Generative Adversarial Nets](https://arxiv.org/pdf/1803.04469.pdf)
