@@ -8,3 +8,4 @@
 
 #### Repos: 
 - Github | [Keras-GAN](https://github.com/eriklindernoren/Keras-GAN)
+- Github | [Cycle-GAN](https://github.com/junyanz/CycleGAN)
