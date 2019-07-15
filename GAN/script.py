@@ -7,7 +7,7 @@ from keras.models import Model,Sequential
 from keras.datasets import mnist
 from tqdm import tqdm
 from keras.layers.advanced_activations import LeakyReLU
-from keras.optimizers import adam
+from keras.optimizers import Adam
 
 
 ## fix MacOS problem
@@ -22,13 +22,15 @@ def load_data():
     # 784 columns per row
     x_train = x_train.reshape(60000, 784)
     return (x_train, y_train, x_test, y_test)
-(X_train, y_train,X_test, y_test)=load_data()
+
+
+(X_train, y_train,X_test, y_test) = load_data()
 print(X_train.shape)
 
 
 
 def adam_optimizer():
-    return adam(lr=0.0002, beta_1=0.5)
+    return Adam(lr=0.0002, beta_1=0.5)
 
 
 def create_generator():
@@ -134,18 +136,12 @@ def training(epochs=1, batch_size=128):
             #Pre train discriminator on  fake and real data  before starting the gan. 
             discriminator.trainable=True
             discriminator.train_on_batch(X, y_dis)
-            
-            #Tricking the noised input of the Generator as real data
+        
             noise= np.random.normal(0,1, [batch_size, 100])
             y_gen = np.ones(batch_size)
-            
-            # During the training of gan, 
-            # the weights of discriminator should be fixed. 
-            #We can enforce that by setting the trainable flag
+
             discriminator.trainable=False
-            
-            #training  the GAN by alternating the training of the Discriminator 
-            #and training the chained GAN model with Discriminator’s weights freezed.
+    
             gan.train_on_batch(noise, y_gen)
             
         if e == 1 or e % 20 == 0:
