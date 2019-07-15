@@ -20,6 +20,7 @@ def load_data():
     
     # convert shape of x_train from (60000, 28, 28) to (60000, 784) 
     # 784 columns per row
+    print(x_train.shape)
     x_train = x_train.reshape(60000, 784)
     return (x_train, y_train, x_test, y_test)
 

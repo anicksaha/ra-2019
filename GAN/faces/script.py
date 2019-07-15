@@ -31,9 +31,15 @@ def load_data():
     # loop over the input images
     for imagePath in imagePaths:
 	    # load the image, pre-process it, and store it in the data list
-	    img_data = image.load_img(imagePath, target_size=(28, 28))
-	    img_data = image.img_to_array(img_data)
-        #img_data = np.expand_dims(img, axis=0)
+
+        #img_data = image.load_img(imagePath, target_size=(28, 28))
+	    #img_data = image.img_to_array(img_data)
+        #img_data = np.expand_dims(img_data, axis=0)
+        
+        img = cv2.imread(imagePath)
+        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        gray = cv2.resize(gray, (28, 28))
+        img_data = image.img_to_array(gray)
         data.append(img_data)
 
     N = len(data)
@@ -42,7 +48,6 @@ def load_data():
     
     # convert shape of x_train from (N, 28, 28) to (N, 784) 
     x_train = x_train.reshape(N, 784)
-
     return x_train
 
 
@@ -136,8 +141,10 @@ def training(epochs=1, batch_size=128):
     discriminator= create_discriminator()
     gan = create_gan(discriminator, generator)
     
-    for e in range(1,epochs+1 ):
+    for e in range(1,epochs+1):
+        
         print("Epoch %d" %e)
+
         for _ in tqdm(range(batch_size)):
         #generate  random noise as an input  to  initialize the  generator
             noise= np.random.normal(0,1, [batch_size, 100])
@@ -168,5 +175,7 @@ def training(epochs=1, batch_size=128):
             
         if e == 1 or e % 20 == 0:
             plot_generated_images(e, generator)
+
+
 
 training(500,128)
