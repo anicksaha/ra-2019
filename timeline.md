@@ -1,9 +1,3 @@
-#### References 
-
-##### `Courses`
-
-- [CS 231n: Convolutional Neural Networks for Visual Recognition](https://www.youtube.com/playlist?list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk)
-- [CS 231n | HomePage](http://cs231n.stanford.edu/)
 
 ##### `Papers | Articles`
 
