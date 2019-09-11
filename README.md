@@ -3,6 +3,7 @@ UMN - [School of Architecture](https://arch.design.umn.edu/) | [College of Desig
 ### Contents
 > - [GANs](https://github.com/anicksaha/ra-umn-college-of-design/tree/master/GAN) - Synthesize images using GANs
 > - [Visual Embeddings](https://github.com/anicksaha/visual-embedding) - Different methods for `Deep Visual Embeddings`
+> - [Emotion Detection](https://github.com/anicksaha/ra-umn-college-of-design/tree/master/emotion-detection)
 
 ### Articles 
 
