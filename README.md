@@ -5,6 +5,7 @@ UMN - [School of Architecture](https://arch.design.umn.edu/) | [College of Desig
 > - [Visual Embeddings](https://github.com/anicksaha/visual-embedding) - Different methods for `Deep Visual Embeddings`
 > - [Emotion Detection](https://github.com/anicksaha/ra-umn-college-of-design/tree/master/emotion-detection) - Categorize a face into 1 of 7 emotions `[Angry, Disgust, Fear, Happy, Neutral, Sad, Suprised]`
 > - [Keras - Face Detection](https://github.com/anicksaha/ra-umn-college-of-design/tree/master/face-detection-keras) - Experiments with Keras to get facial embeddings for face detection.
+> - [Exploring psychometrics](https://github.com/anicksaha/ra-umn-college-of-design/tree/master/psychometrics)
 
 ### Articles 
 
