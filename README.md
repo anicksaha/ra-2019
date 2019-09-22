@@ -7,6 +7,9 @@ UMN - [School of Architecture](https://arch.design.umn.edu/) | [College of Desig
 > - [Keras - Face Detection](https://github.com/anicksaha/ra-umn-college-of-design/tree/master/face-detection-keras) - Experiments with Keras to get facial embeddings for face detection.
 > - [Exploring Psychometrics](https://github.com/anicksaha/ra-umn-college-of-design/tree/master/psychometrics) - Essential Reads and Articles
 
+##### `Util Scripts`
+> - [Scripts Folder](https://github.com/anicksaha/ra-umn-college-of-design/tree/master/scripts)
+
 ### Articles 
 
 > - [Understanding Hinton’s Capsule Networks. Part I: Intuition.](https://medium.com/ai%C2%B3-theory-practice-business/understanding-hintons-capsule-networks-part-i-intuition-b4b559d1159b)
