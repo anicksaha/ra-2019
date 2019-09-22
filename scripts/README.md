@@ -16,11 +16,3 @@
 
 - Create a folder with the name _'data'_. 
 - Run: `python GetData.py`
-
-***
-
-#### Face Extraction
-
-***
-
-#### Emotion Bucketizing
